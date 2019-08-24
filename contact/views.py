@@ -6,3 +6,7 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Welcom to my App!")
+
+
+def home(request):
+    return render(request, "contact/index.html")
