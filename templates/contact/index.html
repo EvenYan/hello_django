@@ -6,5 +6,21 @@
 </head>
 <body>
     <p style="color: red">Welcom to My Homepage!</p>
+
+
+    {% if people.name %}
+        <p>欢迎， {{ people.name }}</p>
+    {% else %}
+        <p>欢迎你，游客，请先注册</p>
+    {% endif %}
+
+    {% for people in people_list %}
+        <li>{{ people }}</li>
+    {% endfor %}
+    
+
+
+    
+
 </body>
 </html>

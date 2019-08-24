@@ -9,4 +9,6 @@ def index(request):
 
 
 def home(request):
-    return render(request, "contact/index.html")
+    people_info = {"name": ""}
+    context = {"people": people_info, "people_list": ["Tim", "Alice", "Merry"]}
+    return render(request, "contact/index.html", context=context)
