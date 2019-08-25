@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>员工信息提交页</title>
+</head>
+<body>
+
+<form action="/contact/save_data/" method="post">
+    {% csrf_token %}
+    姓名：<input type="text" name="name" id="" placeholder="请输入你的姓名"> <br>
+    年龄：<input type="text" name="age" id="" placeholder="请输入你的年龄"> <br>
+    联系方式：<input type="text" name="phone_number" id="请输入你的联系 方式"> <br>
+    <input type="submit" value="提交信息">
+</form>
+
+</body>
+</html>
